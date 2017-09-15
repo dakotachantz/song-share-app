@@ -139,12 +139,13 @@ body {
   color: #FFF;
 }
 
-#mainNav .navbar-toggle {
+
+/* #mainNav .navbar-toggle {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
-}
+} */
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link {
   font-size: 1em;
@@ -397,5 +398,39 @@ header.masthead .header-content .header-content-inner p {
 }
 
 .nav-item {
+  width: 15em;
+  text-align: center;
   padding: 0 5%;
+}
+
+.service-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0;
+  }
+}
+
+.service-box p {
+  margin-bottom: 0;
+}
+
+#playlist {
+  background-color: lightgray;
+  height: 100vh;
+}
+
+.playlist-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 5em;
+  /* background-color: blue; */
 }

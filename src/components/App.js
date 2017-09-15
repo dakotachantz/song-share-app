@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-
         <header id="page-top" className="masthead parallax">
           <div className="header-content">
             <div className="header-content-inner">
@@ -22,6 +21,7 @@ class App extends Component {
         </header>
 
         <PlayListForm />
+        <PlayList />
       </div>
     );
   }
