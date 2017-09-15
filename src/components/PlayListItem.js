@@ -11,22 +11,30 @@ export default class PlayListItem extends Component {
         let songs;
         songs = this.props.songs.map((song, index) => {
             return (
-                <div className="row" key={index}>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="service-box">
-                            <i className="fa fa-4x fa-music text-primary sr-icons"></i>
-                            <h3>- {song.userName}</h3>
-                            <p className="text-muted">Artist: {song.songArtist}</p>
-                            <p className="text-muted">Song: {song.songTitle}</p>
-                            <p className="text-muted">Notes: {song.songNotes}</p>
-                        </div>
-                    </div>
-                </div>
+
+                <tr key={index}>
+                    <td><p className="card-subtitle text-muted"><i className="fa fa-2 x fa-user text-primary sr-icons"></i>  {song.songArtist}</p></td>
+                    <td><p className="card-subtitle text-muted"><i className="fa fa-2 x fa-music text-primary sr-icons"></i>  {song.songTitle}</p></td>
+                    <td><p className="card-subtitle text-muted"><i className="fa fa-2 x fa-comments text-primary sr-icons"></i>  {song.songNotes}</p></td>
+                    <td><p className="card-subtitle text-muted"><i className="fa fa-2 x fa-person text-primary sr-icons"></i>  {song.userName}</p></td>
+                </tr>
             )
         })
         return (
-            <div>
-                {songs}
+            <div className="container playlist-items">
+                <table className="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Artist</th>
+                            <th>Track Title</th>
+                            <th>Comments</th>
+                            <th>User</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {songs}
+                    </tbody>
+                </table>
             </div>
         );
     }

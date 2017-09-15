@@ -14,6 +14,7 @@ label {
 
 #form-button {
   margin: 1em;
+  color: #d31948;
 }
 
 #root {
@@ -49,13 +50,26 @@ hr.light {
 
 a {
   color: #f91e56;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  transition: all 2s;
 }
 
 a:focus, a:hover {
   color: #f91e56;
+  transform: scale(1.1);
+}
+
+button {
+  color: #f91e56;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  transition: all 2s;
+}
+
+button:focus, button:hover {
+  color: #f91e56;
+  transform: scale(1.1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -419,7 +433,7 @@ header.masthead .header-content .header-content-inner p {
 }
 
 #playlist {
-  background-color: lightgray;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -433,4 +447,39 @@ header.masthead .header-content .header-content-inner p {
   width: 100%;
   padding: 5em;
   /* background-color: blue; */
+}
+
+.card {
+  width: 100%;
+  display: flex;
+}
+
+.card-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+}
+
+.playlist-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1em;
+  background-color: #fff;
+  height: 100%;
+}
+
+p {
+  overflow: hidden;
+}
+
+h6 {
+  overflow: hidden;
+}
+
+.table thead tr th {
+  border-bottom: none;
+  padding-left: 2em;
+  color: #d31948;
 }

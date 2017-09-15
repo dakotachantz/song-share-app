@@ -44,9 +44,7 @@ export default class PlayList extends Component {
                     <form onSubmit={this.fetchData}>
                         <button className="btn btn-primary btn-xl">Update List</button>
                     </form>
-                    <div className="container">
-                        <PlayListItem songs={songs} />
-                    </div>
+                    <PlayListItem songs={songs} />
                 </div>
             </div>
         );
