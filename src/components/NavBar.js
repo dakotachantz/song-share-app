@@ -17,7 +17,6 @@ export default class NavBar extends Component {
     }
     handleScroll = (e) => {
         const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-        console.log('scrollTop: ', scrollTop);
 
         if (scrollTop < 20) {
             this.setState({ backgroundColor: "transparent", color: "rgba(255, 255, 255, 0.7)" })

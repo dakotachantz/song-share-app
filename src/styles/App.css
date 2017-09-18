@@ -1,3 +1,7 @@
+body {
+  min-width: 500px;
+}
+
 label {
   width: 100%;
   font-weight: 300;
@@ -272,6 +276,9 @@ header.masthead .header-content .header-content-inner p {
     margin-right: auto;
     margin-left: auto;
   }
+  body {
+    min-width: 500px;
+  }
 }
 
 .btn-default {
@@ -343,7 +350,6 @@ header.masthead .header-content .header-content-inner p {
 }
 
 .nav-item {
-  width: 15em;
   text-align: center;
   padding: 0 5%;
 }
@@ -389,4 +395,9 @@ h6 {
 
 .fa {
   color: #f91e56 !important;
+}
+
+.form-control {
+  width: 90%;
+  margin: 0 auto;
 }

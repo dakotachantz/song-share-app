@@ -13,7 +13,6 @@ export default class PlayList extends Component {
             return results.json();
         }).then(data => {
             this.setState({ songs: data });
-            console.log("state", this.state.songs);
         })
     }
     fetchData = (e) => {
@@ -22,7 +21,6 @@ export default class PlayList extends Component {
             return results.json();
         }).then(data => {
             this.setState({ songs: data });
-            console.log("fetched songs: ", data);
         })
     }
     render() {
