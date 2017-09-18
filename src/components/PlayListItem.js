@@ -2,11 +2,6 @@ import React, { Component } from 'react'
 
 export default class PlayListItem extends Component {
 
-    viewSongs = () => {
-        console.log("did you get here", this.props.songs);
-    }
-
-
     render() {
         let songs;
         songs = this.props.songs.map((song, index) => {

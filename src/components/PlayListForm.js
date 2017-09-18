@@ -52,19 +52,19 @@ export default class PlayListForm extends Component {
                             <form onSubmit={this.addToList}>
                                 <div className="form-group">
                                     <label className="text-faded" htmlFor="userName">Name</label>
-                                    <input onChange={this.handleInputChange} value={userName} type="text" className="form-control" name="userName" placeholder="Enter your name..." />
+                                    <input onChange={this.handleInputChange} value={userName} type="text" className="form-control" name="userName" placeholder="Enter your name..." required />
                                 </div>
                                 <div className="form-group">
                                     <label className="text-faded" htmlFor="songArtist">Artist/Band</label>
-                                    <input onChange={this.handleInputChange} value={songArtist} type="text" className="form-control" name="songArtist" placeholder="Enter the Artist..." />
+                                    <input onChange={this.handleInputChange} value={songArtist} type="text" className="form-control" name="songArtist" placeholder="Enter the Artist..." required />
                                 </div>
                                 <div className="form-group">
                                     <label className="text-faded" htmlFor="songTitle">Track Title</label>
-                                    <input onChange={this.handleInputChange} value={songTitle} type="text" className="form-control" name="songTitle" placeholder="Enter the Track Title..." />
+                                    <input onChange={this.handleInputChange} value={songTitle} type="text" className="form-control" name="songTitle" placeholder="Enter the Track Title..." required />
                                 </div>
                                 <div className="form-group">
                                     <label className="text-faded" htmlFor="songNotes">Notes about Track</label>
-                                    <textarea onChange={this.handleInputChange} value={songNotes} type="text" className="form-control" name="songNotes" placeholder="Notes on the track..."></textarea>
+                                    <textarea onChange={this.handleInputChange} value={songNotes} type="text" className="form-control" name="songNotes" placeholder="Notes on the track..." required></textarea>
                                 </div>
 
                                 <button id="form-button" type="submit" className="btn btn-default btn-xl">Add Song!</button>

@@ -147,38 +147,18 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5em;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #FFF;
 }
 
-
-/* #mainNav .navbar-toggle {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #222222;
-} */
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link {
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-  color: #f91e56;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-  color: #f91e56 !important;
-  background-color: transparent;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-  background-color: transparent;
 }
 
 .navbar-nav {
@@ -294,23 +274,6 @@ header.masthead .header-content .header-content-inner p {
   }
 }
 
-.call-to-action {
-  padding: 50px 0;
-}
-
-.call-to-action h2 {
-  margin: 0 auto 20px;
-}
-
-.text-primary {
-  color: #f91e56 !important;
-}
-
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 .btn-default {
   color: #222222;
   border-color: white;
@@ -330,24 +293,7 @@ header.masthead .header-content .header-content-inner p {
 }
 
 .btn-default.active, .btn-default:active, .open > .btn-default.dropdown-toggle {
-  color: #222222;
-  border-color: #e0e0e0;
-  background-color: #e6e6e6;
-}
-
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .btn-default.dropdown-toggle.focus, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle:hover {
-  color: #222222;
-  border-color: #bfbfbf;
-  background-color: #d4d4d4;
-}
-
-.btn-default.active, .btn-default:active, .open > .btn-default.dropdown-toggle {
   background-image: none;
-}
-
-.btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
-  border-color: white;
-  background-color: white;
 }
 
 .btn-default .badge {
@@ -373,25 +319,10 @@ header.masthead .header-content .header-content-inner p {
   background-color: #d31948;
 }
 
-.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle {
-  color: white;
-  border-color: #c21641;
-  background-color: #d31948;
-}
-
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .btn-primary.dropdown-toggle.focus, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle:hover {
   color: white;
   border-color: #c21641;
   background-color: #d31948;
-}
-
-.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle {
-  background-image: none;
-}
-
-.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
-  border-color: #f91e56;
-  background-color: #f91e56;
 }
 
 .btn-primary .badge {
@@ -417,21 +348,6 @@ header.masthead .header-content .header-content-inner p {
   padding: 0 5%;
 }
 
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
-}
-
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
-  }
-}
-
-.service-box p {
-  margin-bottom: 0;
-}
-
 #playlist {
   background-color: #fff;
   height: 100vh;
@@ -446,19 +362,6 @@ header.masthead .header-content .header-content-inner p {
   height: 100%;
   width: 100%;
   padding: 5em;
-  /* background-color: blue; */
-}
-
-.card {
-  width: 100%;
-  display: flex;
-}
-
-.card-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .5em;
 }
 
 .playlist-items {
@@ -482,4 +385,8 @@ h6 {
   border-bottom: none;
   padding-left: 2em;
   color: #d31948;
+}
+
+.fa {
+  color: #f91e56 !important;
 }

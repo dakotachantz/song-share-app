@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import reactScroll from "react-scroll";
+
+var Link = reactScroll.Link;
 
 export default class Header extends Component {
+
     render() {
         return (
             <header id="page-top" className="masthead parallax">
@@ -9,7 +13,13 @@ export default class Header extends Component {
                         <h1 id="homeHeading">Your Favorite Song Sharing App is now Here!</h1>
                         <hr />
                         <p>Song Share can help you share songs your friends should listen to!</p>
-                        <a className="btn btn-primary btn-xl" href="#share">Share a song</a>
+                        <Link className="btn btn-primary btn-xl"
+                            to="share"
+                            activeClass="activeScroll"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}>Share a song</Link>
                     </div>
                 </div>
             </header>

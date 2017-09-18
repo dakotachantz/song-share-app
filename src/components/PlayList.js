@@ -8,7 +8,6 @@ export default class PlayList extends Component {
             songs: []
         }
     }
-
     componentDidMount = () => {
         fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
             return results.json();
@@ -17,7 +16,6 @@ export default class PlayList extends Component {
             console.log("state", this.state.songs);
         })
     }
-
     fetchData = (e) => {
         e.preventDefault();
         fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
@@ -27,7 +25,6 @@ export default class PlayList extends Component {
             console.log("fetched songs: ", data);
         })
     }
-
     render() {
         let songs = this.state.songs;
         return (
