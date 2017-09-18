@@ -50,9 +50,9 @@ hr.light {
 
 a {
   color: #f91e56;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
 }
 
 a:focus, a:hover {
